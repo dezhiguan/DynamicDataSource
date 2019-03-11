@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gdz.dynamicdatasource.mapper.ChinaMapper" >
+
+    <select id="queryCountryName" parameterType="java.lang.Integer" resultType="java.lang.String">
+        select name from china where id = #{id}
+    </select>
+
+
+</mapper>
